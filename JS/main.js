@@ -17,7 +17,9 @@ enter.addEventListener('click', function(){
     const userKm=userKmInput.value;
     console.log(userKm)
 
-    
+    //calcolare il prezzo base del biglietto (0.21 per km)
+    const startPrice=userKm*0.21;
+    console.log(startPrice)
     
 
     
