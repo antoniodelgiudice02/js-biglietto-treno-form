@@ -3,8 +3,6 @@ const userAge = document.getElementById('userAge')
 const button = document.getElementById('button')
 const resultPrice = document.getElementById('ticket-price')
 
-//chiedere numero km
-
 
 button.addEventListener('click', function(){
 
