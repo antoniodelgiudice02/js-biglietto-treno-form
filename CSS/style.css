@@ -1,0 +1,41 @@
+
+#body{
+    background-color: #b91450;
+}
+
+#body>h1{
+    color: white;
+    font-weight: bold;
+}
+
+/***********************************
+          CALCULATOR
+***********************************/
+
+#calculator .row .col:first-child{
+    background-color: white;
+    padding: 60px 80px;
+    border-radius: 10px 10px 0 0;
+}
+
+#calculator .row .col:last-child{
+    background-color: white;
+    padding: 40px 80px;
+    border-radius: 0 0 10px 10px;
+}
+
+#calculator .label{
+    color: #b91450;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#calculator .input{
+    padding: 10px 20px;
+    border: 2px solid #b91450;
+    border-radius: 10px;
+}
+
+#calculator select{
+    background: white;
+}

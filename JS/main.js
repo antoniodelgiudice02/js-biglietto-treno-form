@@ -1,30 +1,24 @@
-const userKm = document.getElementById('userKm')
-const userAge = document.getElementById('userAge')
-const button = document.getElementById('button')
-const resultPrice = document.getElementById('ticket-price')
+const userNameInput=document.getElementById('userName')
+const userKmInput = document.getElementById('userKm')
+const userAgeInput = document.getElementById('userAge')
+const enter = document.getElementById('enter')
+const reset=document.getElementById('reset')
+const ticketPrice = document.getElementById('ticketPrice')
 
 
-button.addEventListener('click', function(){
 
-    const basePrice = userKm.value*0.21;
-    console.log(basePrice)
-    resultPrice.innerText=basePrice.toFixed(2);
+enter.addEventListener('click', function(){
 
-    const age = userAge.value;
-    console.log(age)
+    //input username
+    const userName=userNameInput.value;
+    console.log(userName);
 
-    if(age < 18){
-        const price = basePrice-basePrice*20/100;
-        console.log(price)
-        resultPrice.innerText=price.toFixed(2);
-    }
+    //input Km
+    const userKm=userKmInput.value;
+    console.log(userKm)
 
-    if(age >= 65){
-        const price = basePrice-basePrice*40/100;
-        console.log(price)
-        resultPrice.innerText=price.toFixed(2);
-
-    }
+    
+    
 
     
 })
