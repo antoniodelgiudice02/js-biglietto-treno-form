@@ -25,24 +25,27 @@ enter.addEventListener('click', function(){
     const userAge=userAgeInput.value;
     console.log(userAge)
 
-    ticketPrice.innerText=price
+    //ticketPrice.innerText=price
 
-    /*calcolare sconto:
+    //calcolare sconto:
 
-        se il passeggero è minorenne applicare sconto del 20%
-        se il passeggero è over 65 applicare sconto del 40% 
+        //sconto base:
+        let discountPerc=0;
 
-    */
-   if(userAge=='minorenne'){
-    const discountPerc=20;
-    price=price-price*discountPerc/100;
-    console.log(price)
+        //se il passeggero è minorenne applicare sconto del 20%
+    if(userAge=='minorenne'){
+        discountPerc=20;
+    }
+        //se il passeggero è over 65 applicare sconto del 40% 
+    if(userAge=='over65'){
+        discountPerc=40;
    }
-   if(userAge=='over65'){
-    const discountPerc=40;
-    price=price-price*discountPerc/100;
-    console.log(price)
-   }
+
+   //calcolo prezzo finale:
+   price=price-price*discountPerc/100;
+   console.log(price)
+
+
 
     
 })
