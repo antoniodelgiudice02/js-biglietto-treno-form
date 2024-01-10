@@ -20,6 +20,10 @@ enter.addEventListener('click', function(){
     //calcolare il prezzo base del biglietto (0.21 per km)
     const startPrice=userKm*0.21;
     console.log(startPrice)
+
+    //input fascia d'età
+    const userAge=userAgeInput.value;
+    console.log(userAge)
     
 
     
