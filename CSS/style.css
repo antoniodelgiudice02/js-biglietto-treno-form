@@ -39,3 +39,18 @@
 #calculator select{
     background: white;
 }
+
+/***********************************
+          BIGLIETTO
+***********************************/
+
+#biglietto h2{
+    color: white;
+    font-weight: bold;
+
+}
+
+#biglietto .col{
+    background: white;
+    height: 250px;
+}

@@ -4,6 +4,8 @@ const userAgeInput = document.getElementById('userAge')
 const enter = document.getElementById('enter')
 const reset=document.getElementById('reset')
 const ticketPrice = document.getElementById('ticketPrice')
+const ticketName=document.getElementById('ticketName')
+const warning=document.getElementById('warning')
 
 
 
@@ -25,7 +27,6 @@ enter.addEventListener('click', function(){
     const userAge=userAgeInput.value;
     console.log(userAge)
 
-    //ticketPrice.innerText=price
 
     //calcolare sconto:
 
@@ -39,13 +40,16 @@ enter.addEventListener('click', function(){
         //se il passeggero è over 65 applicare sconto del 40% 
     if(userAge=='over65'){
         discountPerc=40;
-   }
+    }
 
    //calcolo prezzo finale:
    price=price-price*discountPerc/100;
    console.log(price)
 
+   //stampo biglietto:
+
+    ticketPrice.innerText='€'+price.toFixed(2);
+    ticketName.innerText=userName;
 
 
-    
 })

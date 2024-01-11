@@ -10,11 +10,11 @@
 </head>
 <body id="body" class="text-center">
 
-    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <h1 class="my-4">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
 
     <section id="calculator">
         
-        <div class="container">
+        <div class="container p-5">
 
             <div class="row flex-column">
 
@@ -57,7 +57,45 @@
 
     </section>
 
-    <span>€</span> <span id="ticketPrice"></span>
+    <section id="biglietto">
+
+        <h2 class="h1 my-4">IL TUO BIGLIETTO</h2>
+
+        <div class="container p-5">
+            <div class="row">
+                <div class="col d-flex align-items-center justify-content-center px-5">
+
+                    <div class="card w-100 h-75">
+
+                        <table class="table my-auto">
+                            <thead>
+                              <tr>
+                                <th scope="col">NOME PASSEGGERO</th>
+                                <th scope="col">Offerta</th>
+                                <th scope="col">Carrozza</th>
+                                <th scope="col">Codice CP</th>
+                                <th scope="col">Costo Biglietto</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><span id="ticketName"></span></td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>7547</td>
+                                <td><span id="ticketPrice"></span></td>
+                              </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 
 
 
