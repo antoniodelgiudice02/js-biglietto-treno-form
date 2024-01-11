@@ -50,7 +50,33 @@
 
 }
 
+#biglietto .nome{
+    background-color: gray;
+}
+
 #biglietto .col{
     background: white;
     height: 250px;
+}
+
+#biglietto .card{
+    border-radius: 0;
+}
+
+#biglietto table{
+    height: 200px;
+}
+
+#biglietto th:first-child,
+#biglietto td:first-child{
+    background-color: gray;
+}
+
+#biglietto th{
+    vertical-align: middle;
+    border-bottom: none;
+}
+
+#biglietto td{
+    vertical-align: middle;
 }
